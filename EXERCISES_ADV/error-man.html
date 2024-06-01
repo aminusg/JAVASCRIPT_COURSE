@@ -1,0 +1,27 @@
+<script>
+class SocialMediaError extends Error {
+    constructor(msg, ...params){
+        if (!msg) {
+            msg = "SocialMedia failed";
+        }
+        super(msg, ...params);
+        this.msg = SocialMediaError;
+    }
+}
+</script>
+
+//El ejemplo de la Guía ponía un parámetro regular después de uno por defecto y en cambio en el ejercicio te señala que eso no se puede hacer **********PREGUNTAR*********
+/*Explicación Paso a Paso
+
+Definir los Parámetros:
+    msg es el primer parámetro y puede ser opcional.
+    ...params se utiliza para capturar cualquier otro argumento adicional que se pase al constructor.
+
+Asignar un Valor Predeterminado:
+    Si msg no se proporciona (if (!msg)), se asigna un valor predeterminado 'A social media error occurred'.
+
+Llamar al Constructor de la Clase Base:
+    super(msg, ...params) llama al constructor de Error con el mensaje y cualquier otro parámetro adicional.
+
+Establecer el Nombre del Error:
+    this.name = 'SocialMediaError' establece el nombre del error, lo que es útil para identificar el tipo de error cuando se maneja.*/

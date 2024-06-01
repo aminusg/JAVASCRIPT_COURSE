@@ -1,24 +1,24 @@
-const myList= [
+const miLista= [
     'velma',
-    'scout',
+    'exploradora',
     'jane',
     'john',
     'harry'
 ]
 //Create a for loop
 //print each name of myList
-for (let i = 0; i < myList.length; i++) {
-    console.log(myList[i]);
+for (let i = 0; i < miLista.length; i++) {
+    console.log(miLista[i]);
   }
 
 
 //Create a whileLoop and print them
 let i = 0;
-while (i < myList.length) {
-  console.log(myList[i]);
+while (i < miLista.length) {
+  console.log(miLista[i]);
   i++;
 }
 
-//Crear una función flecha que devuelva "Hello World"
-const saludo = () => "Hello World";
+//Crear una función flecha que devuelva "Hola Mundo"
+const saludo = () => "Hola Mundo";
 console.log(saludo());
